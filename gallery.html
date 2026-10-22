@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore Vietnam - Photo Gallery (Flexbox)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to Main Content</a>
+
+  <header>
+    <h1>Vietnam Travel Photo Gallery</h1>
+    <p>A visual showcase using CSS Flexbox and alternating nth-child styling.</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="destinations.html">Destinations (Grid)</a></li>
+        <li><a href="gallery.html" class="active">Photo Gallery (Flexbox)</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section>
+      <h2>Visual Impressions of Vietnam</h2>
+      <p>
+        This gallery is built with a flexible <strong>CSS Flexbox</strong> layout.
+        Notice how every other image features alternating corner shapes and border tones using the CSS <code>:nth-child()</code> pseudo-class selector.
+        Hovering over each image activates an interactive scale transformation and shadow elevation.
+      </p>
+
+      <div class="flex-gallery">
+        <figure class="gallery-item">
+          <img src="images/halong.jpg" alt="Spectacular aerial view of limestone islands dotting Ha Long Bay">
+          <figcaption>Ha Long Bay UNESCO Heritage</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/hoian.jpg" alt="Warm glowing lanterns illuminating a nocturnal canal in Hoi An">
+          <figcaption>Hoi An Night Market</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/dalat.jpg" alt="Tranquil pine forest mirrored in highland mountain water in Da Lat">
+          <figcaption>Da Lat Highland Pine Hills</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/sapa.jpg" alt="Curving green rice terraces winding down the hillsides of Sapa valley">
+          <figcaption>Sapa Terraced Mountains</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/phongnha.jpg" alt="Expansive cave cavern filled with ancient stalactites in Phong Nha">
+          <figcaption>Phong Nha Karst Caverns</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="images/phuquoc.jpg" alt="Peaceful palm trees and turquoise ocean waves on Phu Quoc beach">
+          <figcaption>Phu Quoc Tropical Sunset</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Explore Vietnam Travel Guide. Created for the Web Design for Everybody Specialization on Coursera.</p>
+    <p>All photos sourced under royalty-free licenses via Unsplash. Validated for W3C HTML5 and WAVE accessibility standards.</p>
+  </footer>
+</body>
+
+</html>
